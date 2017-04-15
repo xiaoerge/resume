@@ -1,183 +1,516 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<title>Qingfeng Yang - Software Developer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<!-- Le styles -->
-<link href="resume_files/bootstrap.css" rel="stylesheet">
-<link href="resume_files/style.css" rel="stylesheet">
-<style>
-	.avatar {
-		width: 125px;
-		height: 125px;
-	}
-</style>
-</head>
-	<body style="display: block;">
-		<section class="container">
 
-			<!-- Header -->
-			<header class="row-fluid">
-				<div class="title span7">
-					<h1>Qingfeng Yang</h1>
-					<h2>Software Developer</h2>
-				</div>
-				<div class="social offset1 span4">
-					<ul>
-						<li>Address</li>
-						<li>Philadelphia</li>
-						<li>Email</li>
-						<li>Phone</li>
-					</ul>
-				</div>	
-			</header>
 
-			<!-- Education Text -->
-			<article class="row-fluid">
-				<header class="span3">
-					<h3>Education</h3>
-					2009 - 2014
-				</header>
-				<div class="span9 ">
-					<p class="welcome">
-						Drexel University<br>
-						Bachelor of Science in Computer Science
-					</p>
-				</div>
-			</article>
-
-			<!-- Skills -->
-			<article class="row-fluid">
-				<header class="span3">
-					<h3>Language</h3>
-					<ul>
-						<li><strong>C/C++</strong></li>
-						<li><strong>Java</strong></li>
-						<li><strong>Python</strong></li>
-						<li><strong>C#</strong></li>
-						<li><strong>Javascript</strong></li>
-					<ul>
-				</header>
-				<div class="span9">
-					<div class="row-fluid skills">
-						<ul class="span6">
-							<li><h4>Skill</h4></li>
-							<li><strong>Mobile Development</strong></li>
-							<li><strong>Object Orientation</strong></li>
-							<li><strong>Relational Database<strong></li>
-							<li><strong>Web Design</strong></li>
-							<li><strong>Version Control</strong></li>
-						</ul>
-						<ul class="span6">
-							<li><h4>Framework</h4></li>
-							<li><strong>Spring/Hibernate</strong></li>
-							<li><strong>Django</strong></li>
-							<li><strong>CodeIgniter</strong></li>
-							<li><strong>ASP.Net MVC</strong></li>
-							<li><strong>Angular JS</strong></li>
-						</ul>
-					</div>
-				</div>
-			</article>
-
-			<!-- Work -->
-			<article class="row-fluid">
-				<header class="span3">
-					<h3>Work Experience</h3>
-					October, 2014 - <br>
-					Present<br>
-				</header>
-				<div class="span9">
-					<h4>
-						Software Developer
-						<span class=" h5 pull-right">Office Practicum&trade;</span>
-					</h4>
-					<span>Primary duties:</span>
-					<ol>
-						<li>
-							Enhanced HL7 interface to improve flexibility.
-						</li>
-						<li>
-							Developed realtime insurance eligibility checking.
-						</li>
-						<li>
-							Added support for new clearinghouse on claim management.
-						</li>
-						<li>
-							Dynamic patient statement with clearinghouse print service.
-						</li>
-						<li>
-							Patient preauthorization capturing.
-						</li>
-					</ol>
-				</div>
-			</article>
-			<article class="row-fluid">
-				<header class="span3">
-					<h3>Work Experience</h3>
-					April, 2014 - <br>
-					September, 2014 <br>
-				</header>
-				<div class="span9">
-					<h4>
-						Software Developer 
-						<span class=" h5 pull-right">Office Practicum&trade;</span>
-					</h4>
-					<p>
-						Reworked existing Swing project to support config file editing and
-						sql connection testing. Developed web apps to manage database meta data.
-						Converted Spring/Hibernate ORM to new Spring Data. Rewrote legacy
-						database builder from Bash to Python.
-					</p>
-				</div>
-			</article>
-
-			<!-- Interests -->
-			<article class="row-fluid">
-				<header class="span3">
-					<h3>Open Source</h3>
-					<ul>
-						<li>
-							<a href="https://github.com/xiaoerge" target="_blank">Xiaoerge @ Github</a>
-						</li>
-					</ul>
-				</header>
-				<div class="span9">
-					<h4>
-						HTTP Database
-					</h4>
-					<ol>
-						<li>
-							Read­only access to database via HTTP GET methods
-						</li>
-					</ol>
-					<h4>Graphical FTP Client</h4>
-					<ol>
-						<li>
-							Easily navigates through directories with the graphical view of the remote file system.
-						</li>
-						<li>
-							Support drag &amp; drop download/upload.
-						</li>
-					</ol>
-					<h4>XML to Swing Parser</h4>
-					<ol>
-						<li>
-							Generate Java GUI from XML. Inspired by Android Layout Builder.
-						</li>
-					</ol>
-				</div>
-			</article>
-
-			<!-- Footer -->
-			<footer>
-				&copy; Qingfeng Yang &nbsp;
-				<a href="#" onclick="javascript:window.print();">Print</a> | <a href="#top">To top <i class="icon-arrow-up"></i></a>
-			
-			</footer>
-		</section>
-	</body>
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+      <title>Qingfeng Yang</title>
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <style>
+         body, html {
+         padding-top:2.5em;
+         margin:0;
+         background-color:#fafafa;
+         font-size: 19px;
+         }
+         .note {
+         display:block;
+         position: absolute;
+         top:10px;
+         left:10px;
+         font-family: "Open Sans";
+         font-size: 0.6em;
+         }
+         .new {
+         background-color: #81C784;
+         border: 1px solid #757575;
+         padding: 1px;
+         border-radius: 4px;
+         }
+         /* Header */
+         header {
+         width:100%;
+         vertical-align: middle;
+         text-align: center;
+         }
+         .header-content {
+         display: inline-block;
+         }
+         .pic {
+         margin: 0 auto;
+         margin-top:-2.5em;
+         border-radius:10em;
+         height:4em;
+         width:4em;
+         border: 2px solid #e0e0e0;
+         transition : all 0.5s linear;
+         }
+         @-webkit-keyframes wiggle {
+         0%   {
+         transform: rotate(0deg);
+         }
+         25%  {
+         transform: rotate(-30deg);
+         }
+         50%  {
+         transform: rotate(15deg);
+         }
+         100% {
+         transform: rotate(0deg);
+         }
+         }
+         .pic:hover {
+         /*Webkit fix*/
+         -webkit-transform: translateZ(0);
+         cursor:pointer;
+         -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+         }
+         .header-text {
+         margin-top:0.5em;
+         margin-left:1em;
+         }
+         header p {
+         text-align:center;
+         font-family: "Open Sans";
+         margin:0;
+         color: #212121;
+         }
+         .first-name {
+         font-size: 1.05em;
+         }
+         .subtitle {
+         font-family: "Open Sans";
+         padding-top:.3em;
+         font-size:0.55em;
+         font-weight:500;
+         color: #424242;
+         }
+         /* Information */
+         .paper {
+         margin: 0 auto;
+         margin-bottom:1em;
+         background-color:white;
+         width:60%;
+         padding:0.5em 0 0.5em 0;
+         border-top: 1px solid #e0e0e0;
+         border-left: 1px solid #e0e0e0;
+         border-right: 1px solid #e0e0e0;
+         border-bottom: 3px solid #e0e0e0;
+         border-radius:3px;
+         }
+         @media(max-width:992px) {
+         .paper {
+         width:80%;
+         }
+         }
+         /* Content Part */
+         .content-wrapper {
+         padding-right:7.25%;
+         }
+         .content {
+         display:table;
+         width:100%;
+         padding-top:1.5em;
+         /*border-top: 1px solid #eeeeee;*/
+         }
+         .content:last-child {
+         margin-bottom: 2em;
+         }
+         body > div > article > div > section:last-child {
+         padding-bottom:1.5em;
+         }
+         .row {
+         display:table-row;
+         }
+         .row div {
+         display:table-cell;
+         }
+         .content-cat {
+         font-family: "Open Sans";
+         font-variant:small-caps;
+         font-weight:300;
+         letter-spacing: 1px;
+         color: #212121;
+         font-size:0.975em;
+         text-align:center;
+         vertical-align:middle;
+         padding-left:6.66%;
+         width:30%;
+         }
+         .content-cat p {
+         font-size:0.7em;
+         font-weight:600;
+         margin-top: 0;
+         margin-bottom:0;
+         }
+         .content-text {
+         border-left:1px solid #e0e0e0;
+         transition: border 0.66s ease-in;
+         }
+         .big-text {
+         vertical-align:top;
+         }
+         .content-text ul {
+         padding:0;
+         margin:0;
+         margin-top:0.15em;
+         width:85%;
+         margin-left:1.5em;
+         }
+         .content-text ul:last-child {
+         margin-bottom:0.5em;
+         }
+         .content-text ul li {
+         font-family: "Open Sans";
+         font-size:0.7em;
+         display:inline-block;
+         }
+         .content-text ul li:first-child {
+         width:35%;
+         color: #424242;
+         font-weight:600;
+         }
+         .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+         text-decoration: none;
+         color: #0277bd;
+         }
+         .content-text ul li a:hover {
+         color:#4fc3f7;
+         }
+         .work-listing p {
+         font-family: "Open Sans";
+         font-size:0.7em;
+         color: #424242;
+         margin-left:2em;
+         margin-top:0.45em;
+         margin-bottom: 0.45em;
+         }
+         div.content-text.work-listing.education-listing > p:nth-child(2) {
+         margin-top:0.25em;
+         }
+         .work-listing .highlight {
+         font-family: "Open Sans";
+         font-size:0.7em;
+         font-weight:400;
+         color: #424242;
+         margin-left:3.25em;
+         padding-left:0.5em;
+         border-left:1px solid #e0e0e0;
+         }
+         .education-listing > .heading {
+         font-weight:600;
+         margin-top:0.75em;
+         margin-left:2em;
+         }
+         .education-listing > .highlight {
+         margin-left:3.25em;
+         }
+         .highlight {
+         transition: border .33s ease-in;
+         }
+         .profiles-listing ul li, .profiles-listing ul li:first-child {
+         width:32%;
+         font-weight: normal;
+         }
+         .profiles-url {
+         display:none;
+         }
+         .work-content, .education-content {
+         padding-top: .75em;
+         }
+         section.content.education-content > div > div.content-cat {
+         vertical-align: top;
+         }
+         div.content-text.skills-listing > p {
+         font-family: "Open Sans";
+         font-size:0.7em;
+         font-weight:400;
+         margin-left: 2em;
+         margin-top: 0.45em;
+         margin-bottom: 0.45em;
+         }
+         div.content-text.skills-listing > p > {
+         color:#212121;
+         }
+         .content-cat p:first-child {
+         margin-top: 10px;
+      </style>
+      <style media="print">
+         body, html {
+         background-color: white;
+         padding-top: 1.5em;
+         }
+         .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+         color: #000;
+         }
+         .paper {
+         width:100%;
+         border: 0;
+         padding-top: 0;
+         }
+         header p {
+         font-size: 1.3em;
+         }
+         .subtitle {
+         font-size: 0.7em;
+         }
+         .header-pic {
+         float:left;
+         }
+         .profiles-url {
+         display: inline-block;
+         }
+         .profiles-listing ul li {
+         display: block;
+         margin-top: 10px;
+         }
+         .profiles-listing ul li a{
+         font-weight: bold;
+         }
+         .content {
+         page-break-inside:avoid;
+         page-break-after:auto;
+         }
+         .content {
+         padding-top: 10px;
+         }
+         .header-text {
+         float:left;
+         margin-top: -1.6em;
+         }
+         .content-wrapper > .content:first-child {
+         padding-top: 2em;
+         }
+         .content:last-child {
+         padding-bottom: 0;
+         }
+         .content-cat {
+         width:33%;
+         color:black;
+         text-align: left;
+         }
+         .content-cat p {
+         font-size:0.6em;
+         font-weight: 600;
+         }
+         header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+         color:black;
+         }
+         .content-text.skills-listing > ul > li span, .subtitle {
+         color:#212121;
+         }
+         .content-text ul:last-child {
+         margin-bottom: 0.25em;
+         }
+         .content-text ul li:first-child {
+         width:50%;
+         }
+         .profiles-listing ul li:first-child {
+         width:32%;
+         }
+         div.content-text.skills-listing > ul > li {
+         width:33%;
+         }
+         .work-listing p {
+         margin-bottom: 0.1em;
+         }
+         div.content-text.skills-listing > ul > li > p {
+         margin-top: 0.4em;
+         margin-bottom: 0.5em;
+         }
+         div.content-text.skills-listing > ul > li {
+         padding-left: 1.5em;
+         }
+         div.content-text.skills-listing > ul > li:first-child {
+         padding-left: 2em;
+         }
+         .note {
+         display:none;
+         }
+         .content-text:hover {
+         border-left:1px solid #eeeeee;
+         }
+         .content-text ul li a:hover {
+         color:#4fc3f7;
+         }
+         .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+         border-left:1px solid #eeeeee;
+         }
+         .big-text {
+         padding-top: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="resume-wrapper">
+         <article class="paper">
+            <header>
+               <div class="header-content">
+                  <div class="header-text">
+                     <p>
+                        Qingfeng Yang
+                     </p>
+                     <p class="subtitle">Software Developer</p>
+                  </div>
+               </div>
+            </header>
+            <div class="content-wrapper">
+               <!-- CONTACT -->
+               <section class="content">
+                  <div class="row">
+                     <div class="content-cat">
+                        Contact
+                     </div>
+                     <div class="content-text">
+                        <ul>
+                           <li>Website</li>
+                           <li>https://github.com/xiaoerge</li>
+                        </ul>
+                        <ul>
+                           <li>Email</li>
+                           <li>[Protected]</li>
+                        </ul>
+                        <ul>
+                           <li>Phone</li>
+                           <li>[Protected]</li>
+                        </ul>
+                        <ul>
+                           <li>Address</li>
+                           <li>[Protected]</li>
+                        </ul>
+                     </div>
+                  </div>
+               </section>
+               <!-- PROFILES -->
+               <section class="content">
+                  <div class="row">
+                     <div class="content-cat big-text">
+                        Work	Experience
+                        <p>Oct, 2014</p>
+                        <p>Present</p>
+                     </div>
+                     <div class="content-text work-listing education-listing">
+                        <p style="margin-top:2.4em;">
+                           <strong>Software Developer (C# Team)</strong> at <strong><a href="http://officepracticum.com/">Office Practicum:</a></strong>
+                        </p>
+                        <p>Healthcare developer on the Office Practicum web EHR with .Net framework and Windows tollings like Visual Studio,  Resharper. </p>
+                        <p class="highlight">Develop and maintain HL7 interfaces for patient registration and scheduling.</p>
+                        <p class="highlight">Develop realtime insurance eligibility checking for our PM system.</p>
+                        <p class="highlight"> Add support for new clearinghouse on claim management.</p>
+                        <p class="highlight">Improve dynamic patient statements with clearinghouse print service</p>
+                     </div>
+                  </div>
+               </section>
+               <section class="content work-content">
+                  <div class="row">
+                     <div class="content-cat big-text">
+                        <p>March, 2014</p>
+                        <p>Oct, 2014</p>
+                     </div>
+                     <div class="content-text work-listing education-listing">
+                        <p>
+                           <strong>Software Developer (Java Team)</strong> at <strong><a href="http://officepracticum.com/">Office Practicum:</a></strong>
+                        </p>
+                        <p>Service developer on the Java team for supporting core business operation.</p>
+                        <p class="highlight">Reworked existing Java Swing project to support config file editing and sql connection testing. </p>
+                        <p class="highlight">Developed web apps in Django framework to manage database meta data.</p>
+                        <p class="highlight">Converted Spring/Hibernate ORM to new Spring Data. </p>
+                        <p class="highlight">Rewrote legacy database builder from Bash to Python. </p>
+                     </div>
+                  </div>
+               </section>
+               <section class="content">
+                  <div class="row">
+                     <div class="content-cat big-text">
+                        Education
+                        <p>September, 2012</p>
+                        <p>September, 2014</p>
+                     </div>
+                     <div class="content-text work-listing education-listing">
+                        <p class="heading" style="margin-top:2.35em;">Drexel University</p>
+                        <p class="highlight">
+                           Bachelor of Science:
+                           <i>Computer Science</i>
+                        </p>
+                     </div>
+                  </div>
+               </section>
+               <section class="content">
+                  <div class="row">
+                     <div class="content-cat">
+                        Skills
+                     </div>
+                     <div class="content-text skills-listing">
+                        <p>
+                           <span class="name">
+                           <strong>
+                           Languages
+                           </strong>
+                           </span>
+                           <span>Strong knowledge:</span>
+                           C/C++, Java, C#, Python, Javascript, PHP, HTML, CSS
+                        </p>
+                        <p>
+                           <span class="name">
+                           <strong>
+                           Frameworks
+                           </strong>
+                           </span>
+                           <span>Professional:</span>
+                           Spring/Hibernate, ASP.Net MVC, React JS/Native, Angular JS, CodeIgniter
+                        </p>
+                     </div>
+                  </div>
+               </section>
+               <section class="content">
+                  <div class="row">
+                     <div class="content-cat">
+                        Open Source
+                     </div>
+                     <div class="content-text skills-listing">
+                        <p>
+                           <span class="name">
+                           <strong>
+                           X12Healthcare
+                           </strong>
+                           </span>
+                           <span> - </span>
+                           ANSI X12 Java implementation for healthcare messages
+                        </p>
+                        <p>
+                           <span class="name">
+                           <strong>
+                           HTTP Database 
+                           </strong>
+                           </span>
+                           <span> - </span>
+                           SQL query building from url parameters to query database in read only mode with CodeIgniter and CodeIgniter Rest Server
+                        </p>
+                        <p>
+                           <span class="name">
+                           <strong>
+                           Graphical FTP Client
+                           </strong>
+                           </span>
+                           <span> - </span>
+                           Java Swing desktop tool for navigating remote file system. 
+                        </p>
+                        <p>
+                           <span class="name">
+                           <strong>
+                           XML to Swing Parser
+                           </strong>
+                           </span>
+                           <span> - </span>
+                           Generate Java GUI from XML. Inspired by Android Layout Builder.
+                        </p>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </article>
+      </div>
+   </body>
 </html>
