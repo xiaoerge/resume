@@ -1,516 +1,479 @@
+<!-- general resume -->
 
-
-<!doctype html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-      <title>Qingfeng Yang</title>
-      <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-      <style>
-         body, html {
-         padding-top:2.5em;
-         margin:0;
-         background-color:#fafafa;
-         font-size: 19px;
-         }
-         .note {
-         display:block;
-         position: absolute;
-         top:10px;
-         left:10px;
-         font-family: "Open Sans";
-         font-size: 0.6em;
-         }
-         .new {
-         background-color: #81C784;
-         border: 1px solid #757575;
-         padding: 1px;
-         border-radius: 4px;
-         }
-         /* Header */
-         header {
-         width:100%;
-         vertical-align: middle;
-         text-align: center;
-         }
-         .header-content {
-         display: inline-block;
-         }
-         .pic {
-         margin: 0 auto;
-         margin-top:-2.5em;
-         border-radius:10em;
-         height:4em;
-         width:4em;
-         border: 2px solid #e0e0e0;
-         transition : all 0.5s linear;
-         }
-         @-webkit-keyframes wiggle {
-         0%   {
-         transform: rotate(0deg);
-         }
-         25%  {
-         transform: rotate(-30deg);
-         }
-         50%  {
-         transform: rotate(15deg);
-         }
-         100% {
-         transform: rotate(0deg);
-         }
-         }
-         .pic:hover {
-         /*Webkit fix*/
-         -webkit-transform: translateZ(0);
-         cursor:pointer;
-         -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-         }
-         .header-text {
-         margin-top:0.5em;
-         margin-left:1em;
-         }
-         header p {
-         text-align:center;
-         font-family: "Open Sans";
-         margin:0;
-         color: #212121;
-         }
-         .first-name {
-         font-size: 1.05em;
-         }
-         .subtitle {
-         font-family: "Open Sans";
-         padding-top:.3em;
-         font-size:0.55em;
-         font-weight:500;
-         color: #424242;
-         }
-         /* Information */
-         .paper {
-         margin: 0 auto;
-         margin-bottom:1em;
-         background-color:white;
-         width:80%;
-         padding:0.5em 0 0.5em 0;
-         border-top: 1px solid #e0e0e0;
-         border-left: 1px solid #e0e0e0;
-         border-right: 1px solid #e0e0e0;
-         border-bottom: 3px solid #e0e0e0;
-         border-radius:3px;
-         }
-         @media(max-width:992px) {
-         .paper {
-         width:80%;
-         }
-         }
-         /* Content Part */
-         .content-wrapper {
-         padding-right:7.25%;
-         }
-         .content {
-         display:table;
-         width:100%;
-         padding-top:1.5em;
-         /*border-top: 1px solid #eeeeee;*/
-         }
-         .content:last-child {
-         margin-bottom: 2em;
-         }
-         body > div > article > div > section:last-child {
-         padding-bottom:1.5em;
-         }
-         .row {
-         display:table-row;
-         }
-         .row div {
-         display:table-cell;
-         }
-         .content-cat {
-         font-family: "Open Sans";
-         font-variant:small-caps;
-         font-weight:300;
-         letter-spacing: 1px;
-         color: #212121;
-         font-size:0.975em;
-         text-align:center;
-         vertical-align:middle;
-         padding-left:6.66%;
-         width:30%;
-         }
-         .content-cat p {
-         font-size:0.7em;
-         font-weight:600;
-         margin-top: 0;
-         margin-bottom:0;
-         }
-         .content-text {
-         border-left:1px solid #e0e0e0;
-         transition: border 0.66s ease-in;
-         }
-         .big-text {
-         vertical-align:top;
-         }
-         .content-text ul {
-         padding:0;
-         margin:0;
-         margin-top:0.15em;
-         width:85%;
-         margin-left:1.5em;
-         }
-         .content-text ul:last-child {
-         margin-bottom:0.5em;
-         }
-         .content-text ul li {
-         font-family: "Open Sans";
-         font-size:0.7em;
-         display:inline-block;
-         }
-         .content-text ul li:first-child {
-         width:35%;
-         color: #424242;
-         font-weight:600;
-         }
-         .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-         text-decoration: none;
-         color: #0277bd;
-         }
-         .content-text ul li a:hover {
-         color:#4fc3f7;
-         }
-         .work-listing p {
-         font-family: "Open Sans";
-         font-size:0.7em;
-         color: #424242;
-         margin-left:2em;
-         margin-top:0.45em;
-         margin-bottom: 0.45em;
-         }
-         div.content-text.work-listing.education-listing > p:nth-child(2) {
-         margin-top:0.25em;
-         }
-         .work-listing .highlight {
-         font-family: "Open Sans";
-         font-size:0.7em;
-         font-weight:400;
-         color: #424242;
-         margin-left:3.25em;
-         padding-left:0.5em;
-         border-left:1px solid #e0e0e0;
-         }
-         .education-listing > .heading {
-         font-weight:600;
-         margin-top:0.75em;
-         margin-left:2em;
-         }
-         .education-listing > .highlight {
-         margin-left:3.25em;
-         }
-         .highlight {
-         transition: border .33s ease-in;
-         }
-         .profiles-listing ul li, .profiles-listing ul li:first-child {
-         width:32%;
-         font-weight: normal;
-         }
-         .profiles-url {
-         display:none;
-         }
-         .work-content, .education-content {
-         padding-top: .75em;
-         }
-         section.content.education-content > div > div.content-cat {
-         vertical-align: top;
-         }
-         div.content-text.skills-listing > p {
-         font-family: "Open Sans";
-         font-size:0.7em;
-         font-weight:400;
-         margin-left: 2em;
-         margin-top: 0.45em;
-         margin-bottom: 0.45em;
-         }
-         div.content-text.skills-listing > p > {
-         color:#212121;
-         }
-         .content-cat p:first-child {
-         margin-top: 10px;
-      </style>
-      <style media="print">
-         body, html {
-         background-color: white;
-         padding-top: 1.5em;
-         }
-         .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-         color: #000;
-         }
-         .paper {
-         width:100%;
-         border: 0;
-         padding-top: 0;
-         }
-         header p {
-         font-size: 1.3em;
-         }
-         .subtitle {
-         font-size: 0.7em;
-         }
-         .header-pic {
-         float:left;
-         }
-         .profiles-url {
-         display: inline-block;
-         }
-         .profiles-listing ul li {
-         display: block;
-         margin-top: 10px;
-         }
-         .profiles-listing ul li a{
-         font-weight: bold;
-         }
-         .content {
-         page-break-inside:avoid;
-         page-break-after:auto;
-         }
-         .content {
-         padding-top: 10px;
-         }
-         .header-text {
-         float:left;
-         margin-top: -1.6em;
-         }
-         .content-wrapper > .content:first-child {
-         padding-top: 2em;
-         }
-         .content:last-child {
-         padding-bottom: 0;
-         }
-         .content-cat {
-         width:33%;
-         color:black;
-         text-align: left;
-         }
-         .content-cat p {
-         font-size:0.6em;
-         font-weight: 600;
-         }
-         header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-         color:black;
-         }
-         .content-text.skills-listing > ul > li span, .subtitle {
-         color:#212121;
-         }
-         .content-text ul:last-child {
-         margin-bottom: 0.25em;
-         }
-         .content-text ul li:first-child {
-         width:50%;
-         }
-         .profiles-listing ul li:first-child {
-         width:32%;
-         }
-         div.content-text.skills-listing > ul > li {
-         width:33%;
-         }
-         .work-listing p {
-         margin-bottom: 0.1em;
-         }
-         div.content-text.skills-listing > ul > li > p {
-         margin-top: 0.4em;
-         margin-bottom: 0.5em;
-         }
-         div.content-text.skills-listing > ul > li {
-         padding-left: 1.5em;
-         }
-         div.content-text.skills-listing > ul > li:first-child {
-         padding-left: 2em;
-         }
-         .note {
-         display:none;
-         }
-         .content-text:hover {
-         border-left:1px solid #eeeeee;
-         }
-         .content-text ul li a:hover {
-         color:#4fc3f7;
-         }
-         .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-         border-left:1px solid #eeeeee;
-         }
-         .big-text {
-         padding-top: 0;
-         }
-      </style>
-   </head>
-   <body style="width: 1000px !important;">
-      <div class="resume-wrapper">
-         <article class="paper">
-            <header>
-               <div class="header-content">
-                  <div class="header-text">
-                     <p>
-                        Qingfeng Yang
-                     </p>
-                     <p class="subtitle">Software Developer</p>
-                  </div>
-               </div>
-            </header>
-            <div class="content-wrapper">
-               <!-- CONTACT -->
-               <section class="content">
-                  <div class="row">
-                     <div class="content-cat">
-                        Contact
-                     </div>
-                     <div class="content-text">
-                        <ul>
-                           <li>Website</li>
-                           <li>https://github.com/xiaoerge</li>
-                        </ul>
-                        <ul>
-                           <li>Email</li>
-                           <li>[Protected]</li>
-                        </ul>
-                        <ul>
-                           <li>Phone</li>
-                           <li>[Protected]</li>
-                        </ul>
-                        <ul>
-                           <li>Address</li>
-                           <li>[Protected]</li>
-                        </ul>
-                     </div>
-                  </div>
-               </section>
-               <!-- PROFILES -->
-               <section class="content">
-                  <div class="row">
-                     <div class="content-cat big-text">
-                        Work	Experience
-                        <p>Oct, 2014</p>
-                        <p>Present</p>
-                     </div>
-                     <div class="content-text work-listing education-listing">
-                        <p style="margin-top:2.4em;">
-                           <strong>Software Developer (C# Team)</strong> at <strong><a href="http://officepracticum.com/">Office Practicum:</a></strong>
-                        </p>
-                        <p>Healthcare developer on the Office Practicum web EHR with .Net framework and Windows tollings like Visual Studio,  Resharper. </p>
-                        <p class="highlight">Develop and maintain HL7 interfaces for patient registration and scheduling.</p>
-                        <p class="highlight">Develop realtime insurance eligibility checking for our PM system.</p>
-                        <p class="highlight"> Add support for new clearinghouse on claim management.</p>
-                        <p class="highlight">Improve dynamic patient statements with clearinghouse print service</p>
-                     </div>
-                  </div>
-               </section>
-               <section class="content work-content">
-                  <div class="row">
-                     <div class="content-cat big-text">
-                        <p>March, 2014</p>
-                        <p>Oct, 2014</p>
-                     </div>
-                     <div class="content-text work-listing education-listing">
-                        <p>
-                           <strong>Software Developer (Java Team)</strong> at <strong><a href="http://officepracticum.com/">Office Practicum:</a></strong>
-                        </p>
-                        <p>Service developer on the Java team for supporting core business operation.</p>
-                        <p class="highlight">Reworked existing Java Swing project to support config file editing and sql connection testing. </p>
-                        <p class="highlight">Developed web apps in Django framework to manage database meta data.</p>
-                        <p class="highlight">Converted Spring/Hibernate ORM to new Spring Data. </p>
-                        <p class="highlight">Rewrote legacy database builder from Bash to Python. </p>
-                     </div>
-                  </div>
-               </section>
-               <section class="content">
-                  <div class="row">
-                     <div class="content-cat big-text">
-                        Education
-                        <p>September, 2012</p>
-                        <p>September, 2014</p>
-                     </div>
-                     <div class="content-text work-listing education-listing">
-                        <p class="heading" style="margin-top:2.35em;">Drexel University</p>
-                        <p class="highlight">
-                           Bachelor of Science:
-                           <i>Computer Science</i>
-                        </p>
-                     </div>
-                  </div>
-               </section>
-               <section class="content">
-                  <div class="row">
-                     <div class="content-cat">
-                        Skills
-                     </div>
-                     <div class="content-text skills-listing">
-                        <p>
-                           <span class="name">
-                           <strong>
-                           Languages
-                           </strong>
-                           </span>
-                           <span>Strong knowledge:</span>
-                           C/C++, Java, C#, Python, Javascript, PHP, HTML, CSS
-                        </p>
-                        <p>
-                           <span class="name">
-                           <strong>
-                           Frameworks
-                           </strong>
-                           </span>
-                           <span>Professional:</span>
-                           Spring/Hibernate, ASP.Net MVC, React JS/Native, Angular JS, CodeIgniter
-                        </p>
-                     </div>
-                  </div>
-               </section>
-               <section class="content">
-                  <div class="row">
-                     <div class="content-cat">
-                        Open Source
-                     </div>
-                     <div class="content-text skills-listing">
-                        <p>
-                           <span class="name">
-                           <strong>
-                           X12Healthcare
-                           </strong>
-                           </span>
-                           <span> - </span>
-                           ANSI X12 Java implementation for healthcare messages
-                        </p>
-                        <p>
-                           <span class="name">
-                           <strong>
-                           HTTP Database 
-                           </strong>
-                           </span>
-                           <span> - </span>
-                           SQL query building from url parameters to query database in read only mode with CodeIgniter and CodeIgniter Rest Server
-                        </p>
-                        <p>
-                           <span class="name">
-                           <strong>
-                           Graphical FTP Client
-                           </strong>
-                           </span>
-                           <span> - </span>
-                           Java Swing desktop tool for navigating remote file system. 
-                        </p>
-                        <p>
-                           <span class="name">
-                           <strong>
-                           XML to Swing Parser
-                           </strong>
-                           </span>
-                           <span> - </span>
-                           Generate Java GUI from XML. Inspired by Android Layout Builder.
-                        </p>
-                     </div>
-                  </div>
-               </section>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<title>Qingfeng Yang</title>
+<style>
+    body {
+        padding-top: 33px;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    header {
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .header-content {
+        display: inline-block;
+    }
+
+    .header-text {
+        margin-top: 20px;
+    }
+
+    .header-text .title {
+        font-size: 33px;
+    }
+
+    .header-text .subtitle {
+        font-size: 20px;
+    }
+
+    header p {
+        text-align: center;
+        margin: 0;
+        color: #212121;
+    }
+
+    .subtitle {
+        padding-top: 10px;
+        font-size: 20px;
+        color: #424242;
+    }
+
+    .paper {
+        margin: 0 auto 33px;
+        background-color: white;
+        width: 66%;
+        border: 1px solid #e0e0e0;
+        border-bottom-width: 3px;
+        border-radius: 3px;
+    }
+
+    @media print {
+        .paper {
+            width: 100%;
+        }
+    }
+
+    /* Content Part */
+    .content-wrapper {
+        padding-right: 33px;
+    }
+
+    .content {
+        display: table;
+        width: 100%;
+        padding-top: 33px;
+    }
+
+    .content:last-child {
+        margin-bottom: 33px;
+    }
+
+    body > div > article > div > section:last-child {
+        padding-bottom: 33px;
+    }
+
+    .row {
+        display: table-row;
+    }
+
+    .row div {
+        display: table-cell;
+    }
+
+    .content-cat {
+        font-variant: small-caps;
+        letter-spacing: 1px;
+        color: #212121;
+        font-size: 20px;
+        text-align: center;
+        width: 25%;
+        vertical-align: top;
+    }
+
+    .content-text {
+        border-left: 1px solid #e0e0e0;
+        transition: border 0.66s ease-in;
+        width: 75%;
+    }
+
+    .big-text {
+        vertical-align: top;
+    }
+
+    .big-text p {
+        font-size: 18px;
+    }
+
+    .content-text ul {
+        padding: 0;
+        width: 85%;
+        margin: 0 0 0 33px;
+    }
+
+    .content-text ul li {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .content-text ul li:first-child {
+        width: 35%;
+        color: #424242;
+    }
+
+    .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+        text-decoration: none;
+        color: #0277bd;
+    }
+
+    .content-text ul li a:hover {
+        color: #4fc3f7;
+    }
+
+    .summary {
+        font-size: 18px;
+        color: #424242;
+        display: block;
+        margin-left: 33px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .job-title {
+        font-weight: bold;
+        margin-left: 33px;
+    }
+
+    div.content-text.work-listing.education-listing > p:nth-child(2) {
+        margin-top: 0.25em;
+    }
+
+    .work-listing .highlight {
+        font-size: 18px;
+        color: #424242;
+        margin-left: 3.25em;
+        padding-left: 0.5em;
+        border-left: 1px solid #e0e0e0;
+    }
+
+    .education-listing > .heading {
+        margin-top: 0.75em;
+        margin-left: 2em;
+    }
+
+    .education-listing > .highlight {
+        margin-left: 3.25em;
+    }
+
+    .highlight {
+        transition: border .33s ease-in;
+    }
+
+    .profiles-listing ul li, .profiles-listing ul li:first-child {
+        width: 32%;
+    }
+
+    section.content.education-content > div > div.content-cat {
+        vertical-align: top;
+    }
+
+    div.content-text.skills-listing > p {
+        font-size: 18px;
+        margin-left: 33px;
+        margin-top: 0;
+    }
+
+</style>
+<body>
+<div class="paper">
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <p class="title">
+                    Qingfeng Yang
+                </p>
+                <p class="subtitle">Software Developer</p>
             </div>
-         </article>
-      </div>
-   </body>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Contact
+                </div>
+                <div class="content-text">
+                    <ul>
+                        <li>Address</li>
+                        <li style="font-size: 17px;">
+                            [protected]
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Email</li>
+                        <li>
+                            [protected]
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Phone</li>
+                        <li>[protected]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Summary
+                </div>
+                <div class="content-text">
+                    <p class="summary">
+                        I am currently a Software Developer at <b>Office Practicum</b>. I spent my first two years
+                        at Office Practicum working on our <b>.NET</b> Electronic Health Record.
+                        Around May of 2017, I have transferred to our service team and working as a
+                        <b>Java</b> and
+                        <b>Javascript</b> developer since. &nbsp;&nbsp;
+                        <!--Aside from my work at Office Practicum, I have successfully developed and deployed-->
+                        <!--Web, Mobile and Desktop apps for personal growth.-->
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat big-text">
+                    Education
+                    <p>2012 to 2014</p>
+                </div>
+                <div class="content-text work-listing education-listing">
+                    <p class="heading" style="font-weight: bold; font-size: 1em;">Drexel University</p>
+                    <p class="highlight">
+                        <i>Bachelor of Science, Computer Science</i>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat big-text">
+                    Work Experience
+                    <p>May 2017 - Present</p>
+                </div>
+                <div class="content-text work-listing">
+                    <p class="job-title">
+                        Java/Javascript Developer at Office Practicum
+                    </p>
+                    <p class="highlight">Develop backend services for our frontend product.</p>
+                    <p class="highlight">Dockerize modules for easy deployment.</p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat big-text">
+                    <p>Oct 2014 - May 2017</p>
+                </div>
+                <div class="content-text work-listing">
+                    <p class="job-title">
+                        C# Developer at Office Practicum
+                    </p>
+                    <p class="highlight">Develop and maintain HL7 interfaces for patient registration and
+                        scheduling.</p>
+                    <p class="highlight">Develop realtime insurance eligibility checking for our PM system.</p>
+                    <p class="highlight">Add support for new clearinghouse on claim management.</p>
+                    <p class="highlight">Improve dynamic patient statements with clearinghouse print service</p>
+                </div>
+            </div>
+        </section>
+        <section class="content work-content">
+            <div class="row">
+                <div class="content-cat big-text">
+                    <p>April 2014 - Oct 2014</p>
+                </div>
+                <div class="content-text work-listing education-listing">
+                    <p class="job-title">
+                        Intern Java Developer at Office Practicum
+                    </p>
+                    <p class="highlight">Service developer on the Java team for supporting core business operation.</p>
+                    <p class="highlight">Reworked existing Java Swing project to support config file editing and sql
+                        connection testing. </p>
+                    <p class="highlight">Developed web apps in Django framework to manage database meta data.</p>
+                    <p class="highlight">Converted Spring/Hibernate ORM to new Spring Data. </p>
+                    <p class="highlight">Rewrote legacy database builder from Bash to Python. </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Languages
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <span class="name">
+                        </span>
+                        Java, C/C++, C#, Python, Javascript, PHP, HTML, CSS
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Frameworks
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <span class="name">
+                        </span>
+                        Spring/Hibernate, ASP.Net, NodeJS, React JS/Native, Angular JS, CodeIgniter
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Technologies
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <span class="name">
+                        </span>
+                        AWS, Docker, LAMP, Parse Server, MongoDB, Relational Database, NoSQL, FireBase,
+                        Material Design, IIS, Shell Scripting, Git, Sonar Code Quality, GraphQL
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Reference
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        "It is my pleasure to recommend Qingfeng.
+                        His performance working as a Software Developer for Office Practicum
+                        proved that he will be a valuable addition to any company."
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Open Source <br> Highlights
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <b>My Resume</b> - This resume is open sourced and hosted on Github.io
+                        <br>Used - <b>HTML, CSS, Gh-Page, Google Font</b>
+                    </p>
+                    <p>
+                        <b>X12Healthcare</b> - ANSI X12 Java implementation for health care billing
+                        <br>Used - <b>Java, Maven, Travis CI, CodeCov, X12 Specification</b>
+                    </p>
+                    <p>
+                        <b>Play as a Service</b> - Play games like Dice, Rock Paper Scissors on social media sites.
+                        <br>Used - <b>NodeJS, Express, Pug, Elastic BeanStalk, PM2, Route53, S3 CDN,
+                        Slack Integration, Open Graph Protocol, Twitter Card, HTML5 MicroData</b>
+                    </p>
+                    <p>
+                        <b>HTTP Database</b> - SQL query builder from url parameters to query database in read only mode
+                        with CodeIgniter and CodeIgniter Rest Server
+                        <br>Used - <b>CodeIgniter, CodeIgniter Rest Server, MySQL</b>
+                    </p>
+                    <p>
+                        <b>Graphical FTP Clients</b> - Java GUI tools for interacting with remote file system.
+                        <br>Used - <b>Swing, GWT, JSch, Bootstrap UI, RSA Encryption</b>
+                    </p>
+                    <p>
+                        <b>Github Page</b> -
+                        <a href="https://github.com/xiaoerge" target="_blank">
+                            https://github.com/xiaoerge
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Mobile App <br> Highlights
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <b>Input Output</b> - String puzzle game for Software Developers
+                        <br>Used - <b>React Native, Microsoft CodePush, Node Modules</b>
+                    </p>
+                    <p>
+                        <b>SudokuZen Mobile</b> - Play the classic Sudoku game online with multiple players
+                        <br>Used - <b>AWS ECS, Microsoft CodePush, Web Socket, MongoDB, Docker Compose</b>
+                    </p>
+                    <p>
+                        <b>MDNearMe</b> - Find physicians near by with distance, name and more.
+                        <br>Used - <b>Cordova, Ionic, AngularJS, Google Map API, Yelp API</b>
+
+                    </p>
+                    <p>
+                        <b>Play Store Developer Page</b> -
+                        <a href="https://play.google.com/store/apps/developer?id=Xiaoerge&hl=en" target="_blank">
+                            https://play.google.com/store/apps/developer?id=Xiaoerge&hl=en
+                        </a>
+                    </p>
+                    <p>
+                        <b>Apple Store Developer Page</b> -
+                        <a href="https://itunes.apple.com/us/developer/qingfeng-yang/id1164068286" target="_blank">
+                            https://itunes.apple.com/us/developer/qingfeng-yang/id1164068286
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Web Development <br> Highlights
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <b>http://VectorImpact.com</b> - Find your home value at Vector Impact. We have over 3 million
+                        homes indexed.
+                        <br>Used - <b>CloudFlare DNS, LAMP Stack, AWS SES, Google Map</b>
+                    </p>
+                    <p>
+                        <b>http://LinkBloom.com</b> - Free advertising for web content owners.
+                        <br>Used - <b>Bootstrap UI, jQuery, Smooch, reCAPTCHA</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="content-cat">
+                    Desktop App <br> Highlights
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                        <b>https://en.softonic.com/author/xiaoerge</b> - Desktop app download at Softonic.com
+                        <br>Used - <b>Java Swing, Excelsior Jet, Inno Setup Compiler</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+</body>
 </html>
