@@ -1,0 +1,123 @@
+{
+  "basics": {
+    "name": "Qingfeng Yang",
+    "label": "Softoware Developer",
+    "picture": "",
+    "email": "[Protected]",
+    "phone": "[Protected]",
+    "website": "",
+    "summary": "",
+    "location": {
+      "address": "[Protected]",
+      "postalCode": "19040",
+      "city": "Hatboro",
+      "countryCode": "US",
+      "region": "PA"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "xiaoerge",
+        "url": "https://github.com/xiaoerge/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Office Practicum",
+      "position": "Software Developer (C# Team)",
+      "website": "http://officepracticum.com/",
+      "startDate": "10/13/2014",
+      "endDate": "",
+      "summary": "Office Practicum is an integrated practice solution, connecting pediatricians and their patients to the best pediatric resources, people and technology.",
+      "highlights": [
+        "Maintain EHR HL7 interface for our clients",
+        "Developed realtime insurance eligibility checking",
+        "Added support for new clearinghouse on claim management",
+        "Dynamic patient statement with clearinghouse print service",
+        "Patient preauthorization capturing"
+      ]
+    },
+    {
+      "company": "Office Practicum",
+      "position": "Software Developer (Java Team)",
+      "website": "http://officepracticum.com/",
+      "startDate": "03/31/2014",
+      "endDate": "10/07/2014",
+      "summary": "Reworked existing Swing project to support config file editing and sql connection testing. Developed web apps to manage database meta data. Converted Spring/Hibernate ORM to new Spring Data. Rewrote legacy database builder from Bash to Python. ",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Drexel University",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "09/2012",
+      "endDate": "09/2014",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "Jira",
+        "Stash",
+        "Git Bash",
+        "IntelliJ Idea",
+        "Visual Studio",
+        "SQL Server"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "C/C++",
+        "Java",
+        "C#",
+        "Python",
+        "PHP",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Spring/Hibernate",
+        "Django",
+        "CodeIgniter",
+        "ASP.Net MVC",
+        "Angular JS",
+        "React",
+        "Express",
+        "Electron",
+        "Ionic"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluency"
+    },
+    {
+      "language": "Mandarin",
+      "fluency": "Fluency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "keywords": []
+    }
+  ],
+  "references": []
+}
